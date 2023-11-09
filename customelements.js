@@ -24,3 +24,15 @@ this.innerHTML = new Date().getFullYear();
 }
 
 customElements.define("x-fullyear", YearElement);
+
+class TextElement extends HTMLElement{
+connectedCallback(){
+this.innerHTML = `<div style="text-align:right">${this.innerHTML}</div>
+`;
+this.innerHTML = `<div style="color:Magenta">${this.innerHTML}</div>
+`;
+
+}
+}
+
+customElements.define("x-text", TextElement);
