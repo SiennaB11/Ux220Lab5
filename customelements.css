@@ -1,3 +1,7 @@
-body{
-    font-size: 2em;
+x-center{
+    visibility: hidden;
+}
+
+x-center:defined{
+    visibility:visible;
 }
